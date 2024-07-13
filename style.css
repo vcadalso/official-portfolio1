@@ -90,6 +90,9 @@ span {
 .logo span {
   color: var(--main-color);
 }
+.home {
+  position: relative;
+}
 .home-content h3 {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -102,7 +105,7 @@ span {
   line-height: 1;
 }
 .home-img img {
-  position: relative;
+  display: block;
   top: 3rem;
   width: 32vw;
   border-top-left-radius: 50%;
@@ -142,7 +145,7 @@ span {
   box-shadow: 0 0 25px var(--main-color);
   background-color: var(--main-color);
 }
-.btn {
+.contact-btn {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: transparent;
@@ -156,7 +159,7 @@ span {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.btn:hover {
+.contact-btn:hover {
   background: var(--main-color);
   color: black;
   transform: scale(1.05);
@@ -197,17 +200,14 @@ span {
 }
 @keyframes words {
   0%,
-  20% {
-    content: "Web Designer";
-  }
-  21%,
   40% {
-    content: "Frontend Developer";
+    content: "Web Designer";
   }
   41%,
   60% {
-    content: "UI / UX Designer";
+    content: "Frontend Developer";
   }
+
   61%,
   80% {
     content: "Web Developer";
@@ -246,6 +246,20 @@ span {
   background: var(--bg-color);
   color: black;
 }
+.project-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(180, 136, 169, 0.5);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  color: #fff;
+  font-size: medium;
+  padding: 10px;
+  text-align: center;
+  z-index: 10;
+}
 .projects h2 {
   margin-bottom: 5rem;
   color: white;
@@ -253,23 +267,51 @@ span {
 
 .projects-container {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 .projects-box {
+  position: relative;
   background-color: var(--main-color);
   height: 300px;
   border-radius: 3rem;
   border: 5px solid transparent;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  overflow: hidden;
 }
 .projects-box:hover {
   background: white;
   color: black;
   border: 5px solid var(--main-color);
   transform: scale(1.03);
+}
+.learn-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+  background: var(--main-color);
+  color: black;
+}
+
+.projects-box:hover .learn-more {
+  opacity: 1;
+  pointer-events: auto;
 }
 .projects-box .projects-info {
   display: flex;
@@ -279,15 +321,17 @@ span {
   justify-content: center;
   align-items: baseline;
   padding: 5rem 5rem;
+  z-index: 0;
 }
-.projects-info h4 {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 2;
-}
+
 .projects-info img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
-  border-radius: 4px;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3rem;
 }
