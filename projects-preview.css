@@ -1,4 +1,4 @@
-body {
+.projects-preview {
   background: var(--bg-color);
   color: black;
 }
@@ -16,20 +16,20 @@ body {
   text-align: center;
   z-index: 10;
 }
-.projects h2 {
+.projects-preview h2 {
   margin-bottom: 5rem;
   color: white;
   font-size: 22px;
 }
 
-.projects-container {
+.projects-preview-container {
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
-.projects-box {
+.projects-preview-box {
   position: relative;
   background-color: var(--main-color);
   height: 300px;
@@ -39,13 +39,13 @@ body {
   transition: 0.4s ease-in-out;
   overflow: hidden;
 }
-.projects-box:hover {
+.projects-preview-box:hover {
   background: white;
   color: black;
   border: 5px solid var(--main-color);
   transform: scale(1.03);
 }
-.launch-app {
+.learn-more {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,11 +66,11 @@ body {
   color: black;
 }
 
-.projects-box:hover .launch-app {
+.projects-preview-box:hover .learn-more {
   opacity: 1;
   pointer-events: auto;
 }
-.projects-box .projects-info {
+.projects-preview-box .projects-info {
   display: flex;
   flex-direction: column;
   text-align: center;
