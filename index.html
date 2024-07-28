@@ -24,7 +24,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="/projects.html">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="/about.html">About + Connect</a>
         <a href="/resume.html">Resume</a>
       </nav>
     </header>
@@ -97,31 +97,31 @@
     </section>
 
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
+  <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="">
-        <div class="input-group">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email" />
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="Phone Number" />
-            <input type="text" placeholder="Subject" />
-          </div>
-        </div>
-        <div class="input-group-2">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-          ></textarea>
-          <input type="submit" value="Send Message" class="contact-btn" />
-        </div>
-      </form>
-    </section>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <div class="input-group">
+      <div class="input-box">
+        <input type="hidden" name="access_key" value="bf74c042-65cd-4b39-bc0a-8c66ba103378">
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      <div class="input-box">
+        <input type="text" name="phone_number" placeholder="Phone Number" />
+        <input type="text" name="subject" placeholder="Subject" required />
+      </div>
+    </div>
+    <div class="input-group-2">
+      <textarea
+        name="message"
+        cols="30"
+        rows="10"
+        placeholder="Your Message" required
+      ></textarea>
+      <input type="submit" value="Send Message" class="contact-btn" />
+    </div> 
+  </form>
+</section>
     <footer class="footer">
       <div class="social">
         <a
@@ -140,7 +140,7 @@
           <a href="/projects.html">Projects</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
           <a href="#">Resume</a>
