@@ -3,14 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resume.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
   </head>
   <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Here is my resume:</p>
-    <a href="resume.pdf" download="VanessaCadalsoResume.pdf">
-      <button>Download PDF</button>
-    </a>
+    <header class="header">
+      <a href="/" class="logo">Vanessa <span>Cadalso</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/resume.html" class="active">Resume</a>
+      </nav>
+    </header>
+    <section class="resume" id="resume">
+      <h1>Check out my <span> resume</span></h1>
+      <div class="resume-container">
+        <div class="img-wrapper">
+          <img src="photos/resume.png" alt="Vanessa Cadalso Resume" />
+        </div>
+        <a
+          href="VanessaCadalsoResume2024.pdf"
+          class="download btn"
+          target="_blank"
+          >Download PDF</a
+        >
+      </div>
+    </section>
   </body>
 </html>
