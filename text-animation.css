@@ -29,11 +29,11 @@
 @keyframes words {
   0%,
   40% {
-    content: "Web Designer";
+    content: "Frontend Developer";
   }
   41%,
   60% {
-    content: "Frontend Developer";
+    content: "Web Designer";
   }
 
   61%,
