@@ -18,6 +18,9 @@
   .projects {
     padding-bottom: 7rem;
   }
+  .projects-preview-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .contact form {
     flex-direction: column;
   }

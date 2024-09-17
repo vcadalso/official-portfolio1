@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="text-animation.css" />
-    <link rel="stylesheet" href="projects-preview.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/text-animation.css" />
+    <link rel="stylesheet" href="/styles/projects-preview.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+  </head>
   <body>
     <header class="header">
       <a href="#home" class="logo">Vanessa <span>Cadalso</span></a>
@@ -24,7 +25,12 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="/projects.html">Projects</a>
-        <a href="/resume.html">Resume</a>
+        <a
+          href="./assets/VanessaCadalsoResume2024.pdf"
+          target="_blank"
+          class="resume-btn"
+          >View Resume</a
+        >
       </nav>
     </header>
 
@@ -52,11 +58,16 @@
           ></a>
         </div>
         <div class="btn-group">
-          <a href="#contact" class="contact-btn btn">Contact</a>
+          <a
+            href="mailto:vanessa.cadalso@gmail.com?subject=Hello%20Vanessa!&body=Hi%20Vanessa,%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%20I%20wanted%20to%20reach%20out%20because..."
+            class="contact-btn btn"
+            target="_blank"
+            >Contact</a
+          >
         </div>
       </div>
       <div class="home-img">
-        <img src="photos/pfp.jpg" alt="profile picture" />
+        <img src="/assets/photos/pfp.jpg" alt="profile picture" />
       </div>
     </section>
 
@@ -66,21 +77,21 @@
         <div class="projects-preview-box">
           <div class="project-name">Weather App</div>
           <div class="projects-info">
-            <img src="photos/weatherapp.jpg" alt="Weather app" />
+            <img src="/assets/photos/weatherapp.jpg" alt="Weather app" />
             <a href="/projects.html" class="learn-more btn">Learn More</a>
           </div>
         </div>
         <div class="projects-preview-box">
           <div class="project-name">Miami Travel Page</div>
           <div class="projects-info">
-            <img src="photos/miami.jpg" alt="Miami Travel Page" />
+            <img src="/assets/photos/miami.jpg" alt="Miami Travel Page" />
             <a href="/projects.html" class="learn-more btn">Learn More</a>
           </div>
         </div>
         <div class="projects-preview-box">
           <div class="project-name">Dictionary App</div>
           <div class="projects-info">
-            <img src="photos/dictionaryapp.jpg" alt="Dictionary App" />
+            <img src="/assets/photos/dictionaryapp.jpg" alt="Dictionary App" />
             <a href="/projects.html" class="learn-more btn">Learn More</a>
           </div>
         </div>
@@ -88,39 +99,28 @@
         <div class="projects-preview-box">
           <div class="project-name">AI Poem Generator</div>
           <div class="projects-info">
-            <img src="photos/poemgenerator.jpg" alt="AI Poem Generator" />
+            <img
+              src="/assets/photos/poemgenerator.jpg"
+              alt="AI Poem Generator"
+            />
             <a href="/projects.html" class="learn-more btn">Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
+    <section class="contact-section">
+      <p>
+        Whether you have a question or just want to say hello, I'd love to hear
+        from you! Feel free to reach out anytime. 😊
+      </p>
+      <a
+        href="mailto:vanessa.cadalso@gmail.com?subject=Hello%20Vanessa!&body=Hi%20Vanessa,%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%20I%20wanted%20to%20reach%20out%20because..."
+        class="contact-btn"
+        >Say Hello! 👋</a
+      >
+    </section>
 
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <div class="input-group">
-      <div class="input-box">
-        <input type="hidden" name="access_key" value="bf74c042-65cd-4b39-bc0a-8c66ba103378">
-        <input type="text" name="full_name" placeholder="Full Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-      </div>
-      <div class="input-box">
-        <input type="text" name="phone_number" placeholder="Phone Number" />
-        <input type="text" name="subject" placeholder="Subject" required />
-      </div>
-    </div>
-    <div class="input-group-2">
-      <textarea
-        name="message"
-        cols="30"
-        rows="10"
-        placeholder="Your Message" required
-      ></textarea>
-      <input type="submit" value="Send Message" class="contact-btn" />
-    </div> 
-  </form>
-</section>
     <footer class="footer">
       <div class="social">
         <a
@@ -133,19 +133,9 @@
         ></a>
         <a href="#"><i class="bx bxl-instagram"></i></a>
       </div>
-
-      <ul class="list">
-        <li>
-          <a href="/projects.html">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="#">Resume</a>
-        </li>
-      </ul>
-      <p class="copyright">Coded by <span> Vanessa Cadalso</span></p>
+      <p class="copyright">
+        Coded with <span>❤️</span> by <span> Vanessa Cadalso</span>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>

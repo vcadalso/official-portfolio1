@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="projects.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="footer.css" />
-
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Projects</title>
   </head>
   <body>
@@ -20,7 +23,7 @@
       <nav class="navbar">
         <a href="/">Home</a>
         <a href="/projects.html" class="active">Projects</a>
-        <a href="/resume.html">Resume</a>
+        <a href="./assets/VanessaCadalsoResume2024.pdf" target="_blank" class="resume-btn">View Resume</a>
       </nav>
     </header>
 
@@ -33,7 +36,7 @@
             <small>Built with HTML, CSS, Javascript</small>
           </div>
           <div class="projects-info">
-            <img src="photos/weatherapp.jpg" alt="Weather app" />
+            <img src="/assets/photos/weatherapp.jpg" alt="Weather app" />
             <a
               href="https://vreactweatherapp.netlify.app/"
               class="launch-app btn"
@@ -48,7 +51,7 @@
             <small>Built with HTML, CSS, Javascript</small>
           </div>
           <div class="projects-info">
-            <img src="photos/miami.jpg" alt="Miami Travel Page" />
+            <img src="/assets/photos/miami.jpg" alt="Miami Travel Page" />
             <a
               href="https://miami-travel-project.netlify.app/"
               class="launch-app btn"
@@ -63,7 +66,7 @@
             <small>Built with HTML, CSS, Javascript</small>
           </div>
           <div class="projects-info">
-            <img src="photos/dictionaryapp.jpg" alt="Dictionary App" />
+            <img src="/assets/photos/dictionaryapp.jpg" alt="Dictionary App" />
             <a
               href="https://vs-dictionary.netlify.app/"
               class="launch-app btn"
@@ -78,7 +81,7 @@
             <small>Built with Python</small>
           </div>
           <div class="projects-info">
-            <img src="photos/population.jpg" alt="Population App" />
+            <img src="/assets/photos/population.jpg" alt="Population App" />
             <a
               href="https://replit.com/@vcadalso/BitterAmusingBlog-3"
               class="launch-app btn"
@@ -93,7 +96,7 @@
             <small>Built with HTML, CSS, Javascript</small>
           </div>
           <div class="projects-info">
-            <img src="photos/worldclock.jpg" alt="World Clock App" />
+            <img src="/assets/photos/worldclock.jpg" alt="World Clock App" />
             <a
               href="https://v-world-clock.netlify.app/"
               class="launch-app btn"
@@ -109,7 +112,10 @@
             <small>Built with HTML, CSS, Javascript</small>
           </div>
           <div class="projects-info">
-            <img src="photos/poemgenerator.jpg" alt="AI Poem Generator" />
+            <img
+              src="/assets/photos/poemgenerator.jpg"
+              alt="AI Poem Generator"
+            />
             <a
               href="https://vs-ai-poem-generator.netlify.app/"
               class="launch-app btn"
@@ -121,18 +127,20 @@
       </div>
     </section>
     <footer class="footer">
-      <ul class="list">
-        <li>
-          <a href="/projects.html">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="#">Resume</a>
-        </li>
-      </ul>
-      <p class="copyright">Coded by <span> Vanessa Cadalso</span></p>
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/vanessa-cadalso-6a24a2198/"
+          target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a href="https://github.com/vcadalso?tab=repositories" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <p class="copyright">
+        Coded with <span>❤️</span> by <span> Vanessa Cadalso</span>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
